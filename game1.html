@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لعبة X O VIP - Web احترافي</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>لعبة X O VIP</h1>
+
+    <div class="player-settings">
+        <input type="text" id="player1" placeholder="اسم اللاعب 1">
+        <input type="text" id="player2" placeholder="اسم اللاعب 2">
+        <select id="mode">
+            <option value="computer">العب ضد الكمبيوتر</option>
+            <option value="friend">العب ضد صديق</option>
+        </select>
+        <select id="difficulty">
+            <option value="easy">سهل</option>
+            <option value="medium">متوسط</option>
+            <option value="hard">صعب</option>
+        </select>
+        <button id="startBtn">ابدأ اللعبة</button>
+    </div>
+
+    <div class="scoreboard">
+        <div class="player-card">
+            <div class="player-info"><span class="player-symbol">X</span> <span id="player1-name">اللاعب 1</span></div>
+            <div class="player-score" id="score1">0</div>
+            <div class="player-stats" id="stat1">0%</div>
+        </div>
+
+        <div class="draw-card">
+            <div class="draw-label">تعادل</div>
+            <div class="draw-score" id="drawScore">0</div>
+            <div class="draw-stats" id="statDraw">0%</div>
+        </div>
+
+        <div class="player-card">
+            <div class="player-info"><span class="player-symbol">O</span> <span id="player2-name">اللاعب 2</span></div>
+            <div class="player-score" id="score2">0</div>
+            <div class="player-stats" id="stat2">0%</div>
+        </div>
+    </div>
+
+    <div class="board" id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <div class="controls">
+        <button id="resetBtn">إعادة اللعبة</button>
+        <button id="resetAllBtn">إعادة ضبط النقاط</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
